@@ -111,5 +111,8 @@ label:hover{
     .formElements{
         display: inline;
     }
+    #content{
+        max-width: 90%;
+    }
 }
 
