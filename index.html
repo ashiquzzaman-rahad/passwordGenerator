@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <h1>Password Generator</h1>
+        <form>
+            <div class="formElements">
+            <label for="passwordLength">Password length:</label>
+            <input type="number" name="passwordLength" id="passwordLength" value="10" min="3"><br>
+        </div>
+        <div class="formElements">
+            <input type="checkbox" name="includeUppercase" id="includeUppercase" checked>
+            <label for="includeUppercase">Uppercase letters</label></div>
+            <div class="formElements">
+            <input type="checkbox" name="includeUppercase" id="includeLowercase" checked>
+            <label for="includeLowercase">Lowercase letters</label><br></div>
+            <div class="formElements">
+            <input type="checkbox" name="includeUppercase" id="includeNumbers" checked>
+            <label for="includeNumbers">Number characters</label></div>
+            <div class="formElements">
+            <input type="checkbox" name="includeUppercase" id="includeSymbols" checked>
+            <label for="includeSymbols">Special characters</label><br></div>
+
+            <button type="button" onclick="generatePassword()" id="generateBtn">Generate Password</button>
+        </form>
+        <p id="generatedPass"></p>
+        <button type="button" id="copyBtn" onclick="copyContent(); showToast();"><img src="copy-icon.jpg" width="20px" alt="copy"></button>
+    </div>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
