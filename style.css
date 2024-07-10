@@ -57,12 +57,14 @@ label{
 }
 
 #generatedPass{
+    text-align: center;
     font-size: 1.5em;
     background-color: rgb(255, 255, 135);
     color: black;
     box-shadow: 5px 5px 10px black;
     border-radius: 20px;
     min-width: 80%;
+    overflow: auto;
 }
 
 #copyBtn{
@@ -112,6 +114,9 @@ label:hover{
     .formElements{
         display: inline;
     }
+}
+
+@media screen and (max-width: 600px) {
     #content{
         max-width: 90%;
     }
